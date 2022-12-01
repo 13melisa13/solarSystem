@@ -44,6 +44,9 @@
     flex-direction: column;
 }
 @media (min-device-width:991px) {
+    main{
+        flex-direction: column;
+    }
     .grid{
         height: 600px;
         width: calc((600px - 1.5em) / 3 * 4);
