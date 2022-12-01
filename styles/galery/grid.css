@@ -45,7 +45,8 @@
 }
 @media (min-device-width:991px) {
     .grid{
-        height: 500px;
+        height: 600px;
+        width: calc((600px - 1.5em) / 3 * 4);
     }
     .grid > div{
         grid-template: repeat(3,1fr)/repeat(4,1fr);
@@ -57,7 +58,8 @@
         grid-template: repeat(4,1fr)/repeat(3,1fr);      
     }
    .grid{
-    height: 1000px;
+         width: calc((1000px - 1.5em) / 4 * 3);
+         height: 1000px;
    }
     
 }
@@ -67,6 +69,7 @@
         grid-template: repeat(6,1fr)/repeat(2,1fr);      
     }
     .grid{
+        width: calc((2000px - 1.5em) / 3);
         height: 2000px;
        }
 }
