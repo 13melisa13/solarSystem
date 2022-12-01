@@ -41,8 +41,8 @@ aside{
         font-size:1.5rem;
     }
     
-    #section1,#section2{
-        grid-column: span 1;
+    #section1{
+        width: 800px;
     }
     aside a{
         width: 100%;
