@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+main{
+    position: relative;
+    margin-top: 9%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    
+}
+main h1{
+    font-family: Impact, Charcoal, sans-serif;
+    color: black;
+}
+aside p{
+    color: #000;
+}
+aside{
+    order: 2;
+    
+}
+
+@media (min-device-width:992px){
+    
+   section{
+        order: 1;
+        height: 90%;
+    }
+    aside{
+        z-index: 1;
+        height: 90%;
+        flex-shrink: 2;
+    }
+    aside p{
+        font-size:1.5rem;
+    }
+    
+    #section1,#section2{
+        grid-column: span 1;
+    }
+    aside a{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    aside img{
+        height: 100%;
+       
+    }
+    main h1{
+        font-size:2.3rem;
+    }
+}
+   
+@media (max-device-width:991px) and (min-device-width:768px){
+    main{
+        
+         margin-top: 15%;
+         flex-direction: column;
+    }
+    aside{
+        padding: 5% 3%;
+        z-index: 1;
+        grid-row-start: 2;
+        height: 50vh;
+        display: flex;
+       
+        
+    }
+    aside p{
+        font-size:1.8rem;
+        width: 50%;
+        padding: 5% 2%;
+    }
+    aside a{
+        width: 40%;
+        height: 100%;
+        
+    }
+    aside img{
+        width: 100%;
+        height: 100%;
+    }
+    main h1{
+        font-size:2.5rem;
+    }
+
+}
+
+@media (max-device-width:768px){
+    main h1{
+        font-size:3rem;
+    }
+    main{
+        grid-template-rows: 2fr;
+        margin-top: 24%;
+        flex-direction: column;
+    }
+    aside{
+        z-index: 1;       
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+       
+
+    }
+    aside p{
+        font-size:2.2rem;
+        padding: 3% 10%;
+        
+    }
+    aside a{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    aside img{
+        height: 100%;
+       
+    }
+}

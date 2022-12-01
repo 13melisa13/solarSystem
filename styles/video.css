@@ -1,0 +1,66 @@
+    iframe{
+        height: 600px;
+        width: 900px;
+    }
+    video{
+        height: 500px;
+        width: 800px;
+    }
+.container{
+    display:flex;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    margin: 0;
+}
+.video:hover .videoContent{
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
+}
+ .video:hover::before{
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+}
+.video{
+    position: relative;
+}
+.video::before, .videoContent{
+    position: absolute;
+}
+.video::before{
+    content: '';
+    background-color: #694545;
+    transition: all 1.5s ease-out;
+    width: 90%;
+    height: 50%;
+    transform:translate(-10%,20%);
+}
+.videoContent,.video::before{
+    opacity:0;
+    visibility: hidden;
+    top: 0;
+    left: 0; 
+}
+.video{
+    left:5%;
+    top: 25%;
+    width: inherit;
+}
+.videoContent{
+    color: #010d19;
+    padding-left: 4%;
+    transition: all 2.5s ease-in;
+    width: 80%;
+    height: 60%;
+    transform:translate(-10%,20%);
+}
+.videoContent h3{
+    text-align: center;
+}
+.videoContent p{
+    text-align: justify;
+    white-space: normal;
+    word-wrap: break-word;
+}

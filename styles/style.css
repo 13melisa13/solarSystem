@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+h1{
+    
+    text-align: center;
+}
+body { 
+    background: #889cd5; 
+}
+blockquote, cite {
+    text-align: right;
+    display: block;
+}
+#database dl {
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    height: 0;    
+    order: 2;
+    z-index: -1;
+}
+
+ul{
+    list-style: square;
+}
+h1{
+    width: 90%;
+}
+aside {
+    /* font-family: Impact, Charcoal, sans-serif; */
+    text-align: justify; 
+    padding: 1%;
+    color: #fff;
+}
+#img1 {
+    float: right;
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+}
+#sectionVideo{
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: inline-block;
+}   
