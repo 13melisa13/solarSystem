@@ -142,7 +142,7 @@
 .cardHolder1 .box:nth-child(3)::before{
     background: linear-gradient(315deg, #16f443,#00b3ff);
 }
-.cardHolder1 .box .content p{
+.cardHolder1 .box .content p,  .cardHolder1 .box .content a{
     font-size: 1em;
     text-align: justify;
 
@@ -163,7 +163,7 @@
     .cardHolder1 .box .content{
         width: 500px;
     }
-    .cardHolder1 .box .content p{
+    .cardHolder1 .box .content p,  .cardHolder1 .box .content a{
         font-size: 2.4rem;
         text-align: justify;
     
